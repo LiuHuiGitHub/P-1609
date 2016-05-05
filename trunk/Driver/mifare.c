@@ -94,6 +94,13 @@ void SPIWriteOne(uchar SpiAddress,uchar wData)
 	RC500CS = 1;
 }
 
+void FM1702_ResetRecover(void)
+{
+    if(SPIReadOne(Page_Reg) == 0x80)            //FM1702 is Reset
+    {
+        Init_FM1702();
+    }
+}
 
 //=======================================================
 //	Ãû³Æ: Init_FM1702 

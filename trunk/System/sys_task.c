@@ -10,6 +10,7 @@
 #include "app_brush.h"
 #include "app_config.h"
 #include "app_pulse.h"
+#include "mifare.h"
 
 BOOL taskCycle1sFlag = FALSE;
 UINT8 taskHandlerCnt10ms = 0;
@@ -88,6 +89,7 @@ void main(void)
         	taskCycle1sFlag = FALSE;
             app_confingHandler1s();
             app_brushCycle1s();
+            FM1702_ResetRecover();
         }
     }
 }

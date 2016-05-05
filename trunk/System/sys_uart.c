@@ -2,7 +2,7 @@
 #include "sys_uart.h"
 #include "string.h"
 
-#define FOSC 11059200L          //系统频率
+#define FOSC 22118400L          //系统频率
 #define BAUD 9600
 
 #define S1_S0 0x40              //P_SW1.6

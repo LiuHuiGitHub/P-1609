@@ -91,8 +91,9 @@ uchar SPIWrite(uchar SpiAddress,uchar *ramadr,uchar width);
 //以下为FM1702读写的子程序
 //===============================================
 void 	Init_FM1702(void);
+void    FM1702_ResetRecover(void);
 uchar 	Read_FIFO(uchar *buff);
-//uchar 	SPIReadOne(uchar SpiAddress);
+uchar 	SPIReadOne(uchar SpiAddress);
 uchar   Command_Send(uchar Comm_Set,uchar *buff, uchar count);
 uchar 	Request(uchar mode);
 uchar 	AntiColl(void);
