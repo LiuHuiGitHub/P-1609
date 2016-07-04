@@ -67,7 +67,7 @@ void app_configInit(void)
             s_System.PulseWidth = s_FactorySystem.PulseWidth;
             state = TRUE;
         }
-        if(s_System.Money > 200)                                        //金额整数部分大于10
+        if(s_System.Money > 900)                                        //金额整数部分大于10
         {
             s_System.Money = s_FactorySystem.Money;
             state = TRUE;
